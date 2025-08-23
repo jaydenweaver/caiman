@@ -19,5 +19,6 @@ pub mod manager;
 pub mod loader;
 pub mod cache;
 pub mod error;
+pub mod hot_reload;
 
 pub use manager::AssetManager;
