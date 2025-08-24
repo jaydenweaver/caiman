@@ -21,4 +21,5 @@ pub mod hot_reload;
 pub mod loader;
 pub mod manager;
 
+pub use asset::Asset;
 pub use manager::AssetManager;
