@@ -15,7 +15,7 @@ impl AssetManager {
         &mut self,
         path: &str,
     ) -> Result<AssetHandle<T>, AssetError> {
-        let asset = L::load_from_path(path)?;
+        let asset = L::load(path)?;
         let id = self.next_id.fetch_add(1, Ordering::Relaxed);
 
         self.assets.insert(id, Box::new(asset));
