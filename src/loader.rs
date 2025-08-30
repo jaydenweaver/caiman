@@ -16,3 +16,13 @@ impl AssetLoader for TextureLoader {
         Ok(format!("loaded texture from {:?}", path))
     }
 }
+
+pub struct SoundLoader;
+
+impl AssetLoader for SoundLoader {
+    type AssetType = Sound;
+
+    fn load(&self, path: &Path) -> Result<Self::AssetType, String> {
+        Ok(format!("loaded sound from {:?}", path))
+    }
+}
