@@ -1,6 +1,6 @@
 use crate::asset::*;
 use std::path::Path;
-
+/*
 pub trait AssetLoader: Send + Sync + 'static {
     type AssetType: Asset;
 
@@ -25,4 +25,4 @@ impl AssetLoader for SoundLoader {
     fn load(&self, path: &Path) -> Result<Self::AssetType, String> {
         Ok(format!("loaded sound from {:?}", path))
     }
-}
+}*/

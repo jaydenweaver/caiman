@@ -1,3 +1,4 @@
+//use crate::{Asset, AssetLoader};
 use std::collections::HashMap;
 use std::sync::atomic::{AtomicU64, Ordering};
 
@@ -10,7 +11,7 @@ impl AssetManager {
     pub fn new() -> Self {
         Self::default()
     }
-
+    /*
     pub fn load<T: Asset, L: AssetLoader<T>>(
         &mut self,
         path: &str,
@@ -27,7 +28,7 @@ impl AssetManager {
         self.assets
             .get(&handle.id())
             .and_then(|x| x.downcast_ref::<T>())
-    }
+    } */
 }
 
 impl Default for AssetManager {

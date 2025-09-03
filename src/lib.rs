@@ -22,4 +22,5 @@ pub mod loader;
 pub mod manager;
 
 pub use asset::Asset;
+//pub use loader::AssetLoader;
 pub use manager::AssetManager;
