@@ -6,7 +6,7 @@ description = "a lightweight asset manager for Rust"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/jaydenweaver/caiman"
 readme = "README.md"
-keywords = ["assets", "asset-manager", "data", "resource-loader", "game-dev", "loader", "storage"]
+keywords = ["assets", "asset-manager", "data", "resource-loader", "game-dev"]
 categories = ["filesystem", "caching", "game-development", "graphics"]
 
 [dependencies]
