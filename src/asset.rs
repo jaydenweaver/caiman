@@ -10,7 +10,7 @@ impl Asset for Texture {}
 
 pub struct Sound {
     pub sample_rate: u32,
-    pub channels: u16,
+    pub channels: u8,
     pub samples: Vec<i16>,
 }
 
