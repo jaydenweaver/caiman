@@ -20,7 +20,9 @@ pub mod error;
 pub mod hot_reload;
 pub mod loader;
 pub mod manager;
+pub mod handle;
 
 pub use asset::Asset;
-//pub use loader::AssetLoader;
+pub use loader::AssetLoader;
 pub use manager::AssetManager;
+pub use handle::AssetHandle;
