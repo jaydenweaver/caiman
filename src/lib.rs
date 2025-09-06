@@ -17,7 +17,6 @@
 
 pub mod asset;
 pub mod error;
-pub mod hot_reload;
 pub mod loader;
 pub mod manager;
 pub mod handle;

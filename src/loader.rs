@@ -4,7 +4,7 @@ use crate::asset::*;
 use std::path::Path;
 
 pub trait AssetLoader: Send + Sync + 'static {
-    fn load(path: &Path) -> Result<Self::AssetType, String>;
+    fn load(path: &Path) -> Result<>;
 }
 
 pub struct TextureLoader;
@@ -20,7 +20,7 @@ impl AssetLoader for TextureLoader { // TextureLoader uses image-v0.25.6
 pub struct SoundLoader;
 
 impl AssetLoader for SoundLoader {
-    fn load(path: &Path) -> Result<Self::AssetType, String> {
+    fn load(path: &Path) -> Result<Sound, AssetError> {
         let file = File::open(path).map_err(|e| e.to_string())?;
         let mss = MediaSourceStream::new(Box::new(file), Default::default());
 
